@@ -1,0 +1,32 @@
+#container{
+    position: absolute;
+    top: 0px;
+    min-height: 520px;
+    width: calc(100% - 80px);
+    overflow: auto;
+    height: calc(100% - 20px);
+    left: 60px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 730px calc(100% - 740px);
+    background-color: rgb(168, 168, 168);
+    grid-gap: 10px;
+}
+
+#side-tools{
+    background-color: white;
+    height: 480px;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 250px;
+}
+
+.upload-image-buton{
+    font-size: 14px;
+    width: 100%;
+    background-color: #4a6da7;
+    text-align: center;
+    color: white;
+    padding: 10px 0px;
+    border-radius: 3px;
+}

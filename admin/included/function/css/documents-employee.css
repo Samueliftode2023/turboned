@@ -1,0 +1,324 @@
+#container{
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    min-height: 520px;
+    width: calc(100% - 80px);
+    overflow: auto;
+    height: calc(100% - 20px);
+    left: 60px;
+    padding: 10px;
+}
+
+#search-angajati{
+    display: flex;
+    gap: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    padding: 20px;
+    position: absolute;
+}
+
+#imagine-salariat{
+    width: 75px;
+    height: 75px;
+    background-color: gray;
+    background-image: url('../../../included/gallery/body/user.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 2px gray;
+    position: relative;
+}
+
+select,input{
+    text-transform: uppercase; 
+}
+
+#mesaj-ajutor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: gray;
+    z-index: 999;
+    text-align: center;
+}
+
+#cititor-angajati{
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px calc(100% - 120px);
+    top: 135px;
+    width: calc(100% - 20px);
+    max-width: 1300px;
+    overflow: auto;
+    height: calc(100% - 145px);
+    max-height: 1000px;
+}
+
+#bara-de-gestionare{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,60px);
+    grid-template-rows: 60px 60px;
+    border-bottom: 1px solid #4a6da7;
+    width: calc(100% - 20px);
+    margin: 0px 10px;
+}
+
+.bara-path{
+    grid-column: 3/9;
+}
+
+#foldere{
+    overflow: auto;
+    padding: 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    grid-template-rows: repeat(auto-fill,140px);
+}
+
+.file-class{
+    position: relative;
+    min-height: 140px;
+    max-width: 140px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.file-class span::selection{
+    background-color: transparent;
+}
+
+.file-class .material-symbols-outlined{
+    position: absolute;
+    color: #e0b85c;
+    font-size: 80px!important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.descriere{
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    color: black;
+    height: 22px;
+}
+
+.descriere::selection{
+    background-color: transparent;
+}
+
+.descriere-completa{
+    overflow: none;
+    z-index: 2;
+}
+
+.descriere-incompleta{
+    overflow: hidden;
+    z-index: 1;
+    bottom: -22px;
+    height: 44px;
+}
+
+.descriere-completa-special{
+    cursor: text;
+}
+
+.descriere-completa-special::selection{
+    background-color: #0b4987!important;
+    color: white;
+}
+
+#cut-folder,
+#paste-folder,
+#download-file,
+#upload-file,
+#edit-folder,
+#move-folder,
+#delete-folder,
+#create-folder{
+    position: relative;
+    cursor: pointer;
+}
+
+#cut-folder span,
+#paste-folder span,
+#undo-id span,
+#redo-id span,
+#download-file span,
+#upload-file span,
+#edit-folder span,
+#move-folder span,
+#delete-folder span, 
+#create-folder span{
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    color: #4a6da7;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#undo-id,
+#redo-id{
+    position: relative;
+    cursor: pointer;
+}
+
+#undo-id span::selection{
+    background-color: transparent!important;
+}
+
+#redo-id span::selection{
+    background-color: transparent!important;
+}
+
+#undo-id span,
+#redo-id span{
+    color: black!important;
+}
+
+#input-cale{
+    width: 100%;
+    margin-top: 7px;
+    border: 0px solid black;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.414);
+}
+
+.bara-activare{
+    box-shadow: 0px 3px 0px #4a6da7;
+}
+
+#not-found{
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#cut-folder span::selection,
+#paste-folder span::selection,
+#download-file span::selection,
+#upload-file span::selection,
+#edit-folder span::selection,
+#move-folder span::selection,
+#delete-folder span::selection, 
+#create-folder span::selection{
+    background-color: transparent;
+}
+
+#cut-folder,
+#paste-folder,
+#download-file,
+#upload-file,
+#edit-folder,
+#move-folder,
+#delete-folder, 
+#create-folder{
+    transition: 200ms;
+    height:calc(100% - 1px);
+    grid-row: 2/3;
+}
+
+#cut-folder:hover,
+#paste-folder:hover,
+#download-file:hover,
+#upload-file:hover,
+#edit-folder:hover,
+#move-folder:hover,
+#delete-folder:hover, 
+#create-folder:hover{
+    background-color: rgb(229, 229, 229);
+}
+
+.disabled-effect{
+    opacity: 0.5;
+}
+
+.disabled-effect:hover{
+    background-color: transparent!important;    
+}
+
+.class-red-file{
+    color: rgb(159, 21, 0)!important;
+}
+
+.class-black-file{
+    color: rgb(0, 0, 0)!important;
+}
+
+.class-blue-file{
+    color: rgb(0, 110, 154)!important;
+}
+
+.class-blue-dark-file{
+    color: rgb(0, 0, 0);
+}
+
+#error-show{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: gray;
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 515px) {
+    #search-angajati{
+        display: flex;
+        gap: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 3px gray;
+        border-radius: 5px;
+        padding: 20px;
+        position: absolute;
+        width: 260px;
+    }
+    #search-angajati select{
+        width: 165px;
+    }
+    #bara-de-gestionare{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,60px);
+        grid-template-rows: 60px 60px 60px;
+        border-bottom: 1px solid #4a6da7;
+        width: calc(100% - 20px);
+        margin: 0px 10px;
+    }
+    #edit-folder,
+    #move-folder,
+    #delete-folder, 
+    #create-folder{
+        grid-row: 3/4;
+    }
+    #cititor-angajati{
+        background-color: white;
+        box-shadow: 0px 0px 3px gray;
+        border-radius: 5px;
+        position:absolute;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 180px calc(100% - 180px);
+        top: 135px;
+        width: calc(100% - 20px);
+        max-width: 1300px;
+        overflow: auto;
+        height: calc(100% - 145px);
+        max-height: 1000px;
+    }
+  }

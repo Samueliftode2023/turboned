@@ -1,0 +1,6 @@
+# Impiedica accesul direct la fisiere
+Order Deny,Allow
+Deny from all
+<Files ~ "\.(jpg|jpeg|png|gif)$">
+Allow from all
+</Files>

@@ -1,0 +1,55 @@
+#container{
+    position: absolute;
+    top: 0px;
+    width: 300px;
+    min-height: 520px;
+    width: calc(100% - 80px);
+    height: calc(100% - 20px);
+    left: 60px;
+    padding: 10px;
+}
+
+h3{
+    font-weight: normal;
+    text-align: center;
+}
+
+.container-upload{
+    width: 300px;
+    position: relative;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 3px gray;
+}
+
+.design-input{
+    width: 300px;
+    height: 50px;
+    border: 1px dashed #4a6da7;
+}
+
+.design-input span{
+    color: #4a6da7;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+p{
+    width: 300px;
+    font-size: 14px;
+}
+
+#show-import{
+    position: relative;
+    top: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 220px);
+    background-color: white;
+    overflow: auto;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+    padding: 10px;
+}

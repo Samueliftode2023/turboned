@@ -1,0 +1,36 @@
+Turboned Web Management System
+
+    A PHP-based web management system that allows authenticated users to 
+    manage structured data through an administrative interface.
+
+Overview
+
+    Turboned is a dynamic web application designed to provide backend management capabilities 
+    for handling database-driven content.
+    It includes authentication, administrative access, and CRUD functionality for efficient data control.
+
+Features
+
+    User Authentication
+
+    Admin Dashboard
+
+    CRUD Operations
+
+    Database Integration
+
+    Dynamic Content Management
+
+    Modular Backend Structure
+
+    🛠 Technologies Used
+
+    PHP
+
+    MySQL
+
+    JavaScript
+
+    HTML5
+
+    CSS3
